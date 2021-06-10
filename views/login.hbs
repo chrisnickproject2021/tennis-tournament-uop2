@@ -1,0 +1,84 @@
+
+    <section >
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+			  <a class="navbar-brand" href="#"><img src="/img/logo1.png" alt="logo"></a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="home">Αρχική σελίδα</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="announ">Ανακοινώσεις</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="games" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Αγώνες
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					  <li><a class="dropdown-item" href="nikitis">Top 16</a></li>
+					  <li><a class="dropdown-item" href="games">Όλοι οι αγώνες</a></li>
+					</ul>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="form">Δήλωση συμμετοχής</a>
+				  </li>
+				  
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="contact">Επικοινωνία</a>
+				  </li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+				  <li>
+					<a href="login">Sign In</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		</nav>
+    </section>
+    <section class="the-form">
+      <div class="wrapper">
+        <div class="title">Είσοδος</div>
+          <form action="login" method="POST">
+            <div class="field">
+              <input type="text" name="username" required>
+              <label>Όνομα χρήστη</label>
+            </div>
+            <div class="field">
+              <input type="password" name="password" required>
+              <label>Κωδικός χρήστη</label>
+            </div>
+            <div class="signup-link">{{message}}</div>
+            {{!-- <div class="content">
+              <div class="checkbox">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Θυμήσου με</label>
+              </div>
+              <div class="pass-link">
+                <a href="#">Ξέχασες τον κωδικό;</a>
+              </div>
+            </div> --}}
+            <div class="field">
+              <input type="submit" value="Login">
+            </div>
+            <div class="signup-link">Δεν έισαι μέλος; <a href="signup">Δημιουργία λογαριασμού</a></div>
+          </form>
+      </div>
+    </section>
+
+<div id = 'myfoot'>
+        <p>Το τουρνουά διοργανώνεται από το Πανεπιστήμιο Πατρών</p>
+        <a href="https://www.upatras.gr/">
+            <img src="img/University_of_Patras_(seal).png" id= unilogo alt="Πανεπηστίμιο Πατρών">
+        </a>
+        <div>
+            <p>Τρόποι Επικοινωνίας:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p>Τηλέφωνο&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="specialstyle">6976341294</span></p>
+            <p class="myfoot2">E-mail &nbsp;&nbsp;&nbsp;<span class = "specialstyle">tennistournamentuop@gmail.com</span></p>
+
+        </div>
+    </div>

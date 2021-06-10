@@ -1,0 +1,157 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+			  <a class="navbar-brand" href="#"><img src="/img/logo1.png" alt="logo"></a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="home">Αρχική σελίδα</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="announ">Ανακοινώσεις</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="games" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Αγώνες
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					  <li><a class="dropdown-item" href="nikitis">Top 16</a></li>
+					  <li><a class="dropdown-item" href="games">Όλοι οι αγώνες</a></li>
+					</ul>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="form">Δήλωση συμμετοχής</a>
+				  </li>
+				  
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="contact">Επικοινωνία</a>
+				  </li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+				  <li>
+					<a href="login">Sign In</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		</nav>
+  <div class="secondMandatory">
+    <div class="theForm">
+      <p class="firstMandatory">Δήλωση Συμμετοχής</p>
+      <br>
+      <div class="message_style">{{message}}</div>
+      <form action="form" method="POST" id="mandatory">
+          <fieldset>
+              <legend>Στοιχεία παίκτη</legend>
+              <p>Συμπληρώστε τα στοιχεία σας με ελληνικούς χαρακτήρες</p>
+              <br>
+              <br>
+              <label>
+                  Ονοματεπώνυμο
+                  <br>
+                  <input type="text" name="name" placeholder="Όνομα" size = "30">
+              </label>
+              &nbsp;
+              <input type="text" name="surname" placeholder="Επώνυμο" size = "30">
+              <br>
+              <br>
+              <label >
+                  Στοιχεία Επικοινωνίας
+                  <br>
+                  <input type="tel" name="phone" placeholder="Τηλέφωνο" size = "30">
+              </label>
+              &nbsp;
+              <input type="email" name="mail" placeholder="Διεύθυνση Μέιλ" size = "30">
+          </fieldset>
+          <fieldset>
+              <legend>Επιλέξτε την ιδιότητα σας</legend>
+              <select name="status">
+                  <option value="Pf">Προπτυχιακός φοιτητής</option>
+                  <option value="Md">Μεταπτυχιακός/Διδακτορικός</option>
+                  <option value="Employee">Εργαζόμενος στο Πανεπηστήμιο</option>
+                  <option value="Other">Άλλο</option>
+              </select>
+          </fieldset>
+          <fieldset>
+              <legend>Επιλέξτε το φύλο σας</legend>
+              <select name="gender">
+                  <option value="M">Άντρας</option>
+                  <option value="F">Γυναίκα</option>
+              </select>
+          </fieldset>
+          <fieldset>
+              <legend>Έχετε λάβει μέρος ξανά στο ετήσιο Τουρνουά μας; </legend>
+              <input id="radio1" type="radio" name="prevExp" value="newEntry">
+              <label for="radio1">Πρώτη φορά που λαμβάνω μέρος</label>
+              <br>
+              <input id="radio2" type="radio" name="prevExp" value="existing">
+              <label for="radio2">Έχω συμμετάσχει και στο παρελθόν</label>
+          </fieldset>
+          <fieldset>
+                      <legend>Προσωπικά στοιχεία</legend>
+                      Βαθμός εξοικείωσης με Τέννις
+                      <select name="level">
+                          <option value="Prfath">Επαγγελματίας αθλητής</option>
+                          <option value="Exp">Έμπειρος παίκτης</option>
+                          <option value="Norm">Εξοικειωμένος παίκτης</option>
+                          <option value="Beg">Αρχάριος παίκτης</option>
+                      </select>
+                      <br>
+                      <br>
+                      <label>
+                          Ημερομηνία γέννησης
+                          <br>
+                          <input type="date" name="mera" placeholder="2021-01-01" min="1940-01-01" max="2015-12-31">
+                      </label>
+                  </fieldset>
+                  <fieldset>
+                    <legend>Στοιχεία μόνο για φοιτητές</legend>
+                      Έτος σπουδών
+                      <input id="radioA" type="radio" name="etos_spoudon" value="1">
+                      <label for="radioA">A</label>
+                      &nbsp;
+                      <input id="radioB" type="radio" name="etos_spoudon" value="2">
+                      <label for="radioB">B</label>
+                      &nbsp;
+                      <input id="radioC" type="radio" name="etos_spoudon" value="3">
+                      <label for="radioC">C</label>
+                      &nbsp;
+                      <input id="radioD" type="radio" name="etos_spoudon" value="4">
+                      <label for="radioD">D</label>
+                      &nbsp;
+                      <input id="radioE" type="radio" name="etos_spoudon" value="5">
+                      <label for="radioE">E</label>
+                      &nbsp;
+                      <input id="radioF" type="radio" name="etos_spoudon" value="6">
+                      <label for="radioF">6+</label>
+                      <br>
+                      <br>
+                      <label>
+                          Αριθμός μητρώου
+                          <br>
+                          <input type="number" name="am" placeholder="1050505" min="1000000" max="2000000">
+                      </label>
+          </fieldset>
+          <br>
+          <div class="firstMandatory">
+            <input type="submit" value="Υποβολή" >
+          </div> 
+      </form>
+    </div>
+  </div>  
+
+  <div id = 'myfoot'>
+        <p>Το τουρνουά διοργανώνεται από το Πανεπιστήμιο Πατρών</p>
+        <a href="https://www.upatras.gr/">
+            <img src="img/University_of_Patras_(seal).png" id= unilogo alt="Πανεπηστίμιο Πατρών">
+        </a>
+        <div>
+            <p>Τρόποι Επικοινωνίας:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p>Τηλέφωνο&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="specialstyle">6976341294</span></p>
+            <p class="myfoot2">E-mail &nbsp;&nbsp;&nbsp;<span class = "specialstyle">tennistournamentuop@gmail.com</span></p>
+
+        </div>
+    </div>
+  <script src="js/form.js"></script>
